@@ -1,3 +1,77 @@
-page-home {
+*{
+    margin:0;
+    padding:0;
+    font-family: Ubuntu;
 
+}
+
+.toolbar-title{
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.toolbar-background{
+    background: #ea2429;
+}
+
+.toolbar{
+    height:60px;
+}
+
+ion-card img{
+    float: left;
+    width:25%;
+}
+
+.donerweek{
+    margin:10px;
+}
+
+.donerweek div{
+    margin-left:10%;
+    float: left;
+    text-align: center;
+}
+
+.donerweek img{
+    width:20%;
+    border-radius: 50%;
+    float: right;
+    margin-right:10%;
+}
+
+.col{
+    padding:0px;
+}
+
+.ctndonr{
+    padding:5px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.ctndonr img{
+    border-radius:4%;
+}
+
+.datactn{
+    padding-left:10px;
+}
+
+.datactn p{
+    padding:5px 0px 0px 0px;
+}
+
+.bgroup{
+    color:#ea2429;
+}
+
+ion-icon{
+    font-size:30px;
+}
+
+.callbtn{
+    margin-top:5px;
+    color:#ea2429;
+    background: #ffffff;
 }

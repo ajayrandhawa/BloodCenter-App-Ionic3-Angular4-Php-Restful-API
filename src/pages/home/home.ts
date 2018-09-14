@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,10 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  datadic = "";
 
+  constructor(public navCtrl: NavController,private statusBar: StatusBar) {
+    this.statusBar.backgroundColorByHexString('#ea2429');
   }
 
 }

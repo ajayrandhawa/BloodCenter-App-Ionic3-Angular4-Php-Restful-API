@@ -1,5 +1,8 @@
 {
-  "name": "network",
-  "app_id": "",
-  "type": "ionic-angular"
+  "name": "bloodbank",
+  "app_id": "8223f524",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

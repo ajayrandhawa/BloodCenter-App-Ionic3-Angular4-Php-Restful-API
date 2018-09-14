@@ -1,0 +1,84 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Become a Doner</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label stacked>Full Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Mobile Number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Email ID</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>DOB</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Gender</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="Male">Male</ion-option>
+      <ion-option value="Female">Female</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Blood Group</ion-label>
+    <ion-select [(ngModel)]="bgroup">
+      <ion-option value="A+">A+</ion-option>
+      <ion-option value="A-">A-</ion-option>
+      <ion-option value="B+">B+</ion-option>
+      <ion-option value="B-">B-</ion-option>
+      <ion-option value="AB+">AB+</ion-option>
+      <ion-option value="AB-">AB-</ion-option>
+      <ion-option value="O+">O+</ion-option>
+      <ion-option value="O-">O-</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label stacked>State</ion-label>
+      <ion-select (ionChange)="setDistrictValues(sState)" [(ngModel)]="sState">
+           <ion-option [value]="sState" *ngFor = "let sState of states">{{sState.name}} </ion-option> 
+     </ion-select>
+           
+  </ion-item>
+ <ion-item *ngIf="selectedDistricts">
+       <ion-label stacked>City</ion-label>
+       <ion-select [(ngModel)]="sDistrict">
+             <ion-option [value]="sDistrict" *ngFor = "let sDistrict of selectedDistricts">{{sDistrict.name}}</ion-option>
+       </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label stacked>Address</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label stacked>Message</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <div class="ctnbtn">
+      <button ion-button style="text-transform:none"  round large class="regbutton" (click)="gotohome()">
+          Register
+      </button>
+    </div>
+  
+</ion-content>
