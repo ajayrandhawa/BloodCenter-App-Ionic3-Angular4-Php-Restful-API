@@ -4,7 +4,7 @@ The BloodCenter is an Open Source mobile application developed in Ionic 3, Angul
 
 ##### Buy From Envato : https://codecanyon.net/item/blood-center-blood-donation-app-android-ios-php-admin-dashboard-rest-api/23529296
 
-#### UI development is done! API Integration in Development....
+## This is only BoilerPlate
 
 # Under Development....
 
