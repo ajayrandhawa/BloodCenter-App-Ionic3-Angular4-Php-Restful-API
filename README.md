@@ -8,8 +8,6 @@ The BloodCenter is an Open Source mobile application developed in Ionic 3, Angul
 
 # Under Development....
 
-<img src="promobloodcenter.jpg" />
-
 ### Happy Open Source....
 
 
